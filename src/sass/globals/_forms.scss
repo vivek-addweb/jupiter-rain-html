@@ -1,0 +1,110 @@
+/**
+ * @file
+ * SCSS file to generate CSS.
+ *
+ * Form SCSS
+ */
+
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='number'],
+input[type='tel'],
+textarea,
+select,
+.form-control {
+  /*height: 30px;
+  padding: 4px 12px;
+  border-color: $black;
+  background-color: $white;
+  @include border-radius(0);
+  @include box-shadow(none);
+  &.throbbing {
+    background-repeat: no-repeat;
+  }*/
+}
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='password']:focus,
+input[type='number']:focus,
+input[type='tel']:focus,
+textarea:focus,
+select:focus,
+.form-control:focus {
+  /*border-color: $black;
+  @include box-shadow(0 1px 2px rgba(0, 0, 0, .2));*/
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='number'],
+input[type='tel'],
+textarea {
+  /*@include appearance(none);*/
+}
+
+/* Custom select box design */
+.select-tag {
+  position: relative;
+  display: inline-block;
+  height: 48px;
+  width: 230px;
+  border: 1px solid #E6E6E6;
+  background: $white;
+  @include border-radius(3px);
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: auto;
+    display: inline-block;
+    height: 0;
+    width: 0;
+    margin: 14px 29px 0 0;
+    color: #676767;
+    font-size: 20px;
+    font-family: 'FontAwesome';
+    content: '\f078';
+  }
+  select {
+    position: relative;
+    z-index: 1;
+    height: 48px;
+    width: 100%;
+    padding: 5px 25px 5px 10px;
+    border: none;
+    background: transparent;
+    color: $black;
+    line-height: 18px;
+    text-align: center;
+    @include appearance (none);
+    @include box-shadow (node);
+  }
+}
+.select-tag select::-ms-expand {
+  display: none;
+}
+/* End */
+
+/* button design */
+.special-action-btn {
+  a {
+    display: inline-block;
+    padding: 12px 36px;
+    border: 2px solid $white;
+    background-color: #AFB3A4;
+    color: $white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    @include border-radius(3px);
+    &.ready-to-ship { margin-left: 20px; }
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
+/* End */

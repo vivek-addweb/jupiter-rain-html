@@ -1,0 +1,114 @@
+/**
+ * @file
+ * SCSS file to generate CSS.
+ *
+ * Footer SCSS.
+ */
+.footer {
+  display: inline-block;
+  width: 100%;
+  background-color: $black-31;
+  .footer-menu {
+    display: inline-block;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .footer-grid {
+      float: left;
+      display: inline-block;
+      width: 25%;
+      .footer-title {
+        display: inline-block;
+        margin-bottom: 10px;
+        color: $grey-93;
+        font-size: 18px;
+      }
+      .footer-details {
+        ul {
+          li {
+            a {
+              display: inline-block;
+              margin-bottom: 10px;
+              color: $grey-93;
+              &:hover {
+                color: $pink-ff;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+        .social-icon {
+          display: inline-block;
+          width: 100%;
+          margin-bottom: 35px;
+          ul {
+            li {
+              float: left;
+              margin-right: 20px;
+            }
+          }
+        }
+        .input-search {
+          display: inline-block;
+          width: 100%;
+          margin-bottom: 15px;
+          input {
+            display: inline-block;
+            height: 45px;
+            width: 100%;
+            border: 1px solid $grey-93;
+            background-color: transparent;
+            &:focus {
+              border: 1px solid $pink-ff;
+              outline: none;
+            }
+          }
+        }
+        .search-btn {
+          a {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 12px 20px;
+            border: 1px solid $pink-ff;
+            border-radius: 4px;
+            color: $white;
+            font-size: 18px;
+            text-align: center;
+            text-transform: uppercase;
+            @include calc('width', '50% - 7px');
+            &:last-child { margin-right: 0; }
+            &:hover {
+              background-color: $pink-ff;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-sponser {
+    display: inline-block;
+    width: 100%;
+    .sponser-left,
+    .sponser-right {
+      float: left;
+      display: inline-block;
+      width: 50%;
+      a {
+        img {
+          display: inline-block;
+          height: 40px;
+          width: 60px;
+          margin-right: 3px;
+        }
+      }
+    }
+    .sponser-right {
+      a {
+        img {
+          width: 92px;
+        }
+      }
+    }
+  }
+}

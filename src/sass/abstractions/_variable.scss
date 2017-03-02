@@ -1,0 +1,59 @@
+/**
+ * @file
+ * SCSS file for variables.
+ *
+ * All variables used in SCSS are defined in this file.
+ */
+
+
+/**
+ * Font face
+ */
+$opensans-extrabold: 'OpenSans Extrabold';
+$opensans-bold: 'OpenSans Bold';
+$opensans-semibold: 'OpenSans SemiBold';
+$opensans-bolditalic: 'OpenSans BoldItalic';
+$opensans-italic: 'OpenSans Italic';
+$opensans-regular: 'OpenSans Regular';
+$opensans-light: 'OpenSans light';
+
+/* URLs */
+$url-opensans-extrabold: url('../fonts/OpenSans/OpenSans-ExtraBold.woff');
+$url-opensans-bold: url('../fonts/OpenSans/OpenSans-Bold.woff');
+$url-opensans-semibold: url('../fonts/OpenSans/OpenSans-Semibold.woff');
+$url-opensans-bolditalic: url('../fonts/OpenSans/OpenSans-BoldItalic.woff');
+$url-opensans-italic: url('../fonts/OpenSans/OpenSans-Italic.woff');
+$url-opensans-regular: url('../fonts/OpenSans/OpenSans-Regular.woff');
+$url-opensans-light: url('../fonts/OpenSans/OpenSans-Light.woff');
+
+
+/* Color code */
+$white:     #FFF;
+$white-f9:  #F9F9F9;
+$black:     #000;
+$black-31:  #313234;
+$grey-38:   #383838;
+$grey-93:   #939696;
+$grey-b7:   #B7B7B7;
+$pink-ff:   #FF637E;
+$black-5c:  #5C5C5C;
+$black-65:  #656565;
+$gray-c3:   #C3C3C3;
+$blue-56:   #564FCC;
+$green-e3:  #E3F6E3;
+$green-b0:  #B0F7E9;
+$blue-b0:   #B0D4F6;
+$yellow-f1: #F1F7B1;
+$skin-f6:   #F6D2B0;
+
+/**
+ * Media query (for responsive design)
+ */
+$small-desktop: 1200px;
+$ipad: 1024x;
+$ipad-portrait: 992px;
+$mobile: 767px;
+$mobile-landscape: 600px;
+$mobile-portrait: 480px;
+$small-mobile-portrait: 360px;
+/* End */

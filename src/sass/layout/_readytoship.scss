@@ -1,0 +1,260 @@
+/**
+ * @file
+ * SCSS file to generate CSS.
+ *
+ * Ready to ship page SCSS
+ */
+
+/* Banner part design */
+.rts-banner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  img {
+    max-height: 530px;
+    width: 100%;
+  }
+  .banner-text {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    max-width: 570px;
+    margin: 0 0 85px 140px;
+    text-align: center;
+    h2 {
+      margin-bottom: 22px;
+      font-size: 53px;
+      text-transform: uppercase;
+    }
+    p {
+      margin-bottom: 30px;
+      font-size: 20px;
+      line-height: 35px;
+    }
+  }
+}
+/* End */
+.shop-now-button {
+  display: inline-block;
+  padding: 12px 36px;
+  background-color: #656460;
+  color: $white;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  @include border-radius(3px);
+  &:hover {
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+
+/* Speaciall collection part design */
+.special-coll-main {
+  display: inline-flex;
+  width: 100%;
+  background-color: #3A6D8A;
+  align-items: center;
+  .special-coll-img,
+  .special-coll-detail {
+    float: left;
+    width: 50%;
+  }
+  .special-coll-img {
+    img { width: 100%; }
+  }
+  .special-coll-detail {
+    display: inline-block;
+    padding: 80px;
+    color: $white;
+    text-align: center;
+    h2,
+    p,
+    .special-action-btn {
+      display: inline-block;
+      width: 100%;
+    }
+    h2 {
+      margin-bottom: 30px;
+      font-size: 53px;
+      letter-spacing: 3px;
+    }
+    p {
+      margin-bottom: 30px;
+      color: #E5E8EE;
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+}
+/* End */
+
+/* Designer jewellery part design */
+.designer-jewelery {
+  background-color: $white;
+  .special-coll-detail {
+    color: $grey-38;
+    p {
+      color: $black-5c;
+    }
+  }
+  .special-action-btn {
+    .select-to-shop,
+    a {
+      display: inline-block;
+    }
+    a {
+      margin-left: 20px;
+      border-color: #E6E6E6;
+      background-color: #9B9B9D;
+      font-size: 16px;
+      &:hover {
+        color: $grey-38;
+      }
+    }
+  }
+}
+/* End */
+
+/* Watches and more part design */
+.watches-more-main {
+  display: inline-block;
+  width: 100%;
+  padding: 153px 0;
+  background-image: url('../images/bg.jpg');
+  background-repeat: repeat;
+  text-align: right;
+  .watches-more-wrap {
+    float: right;
+    display: flex;
+    width: 88%;
+  }
+  .watches-img,
+  .watches-more-detail {
+    float: left;
+  }
+  .watches-img {
+    width: 38%;
+    img { width: 100%; }
+  }
+  .watches-more-detail {
+    display: inline-flex;
+    min-height: 100%;
+    @include calc('width', '62% - 20px');
+    margin-left: 20px;
+    padding: 68px 110px;
+    background-color: #473D3E;
+    color: $white;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    h2 {
+      display: inline-block;
+      width: 100%;
+      margin: 0 0 34px;
+      font-size: 34px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 22px;
+      line-height: 34px;
+    }
+    .special-action-btn {
+      display: inline-block;
+      width: 100%;
+      margin-top: 38px;
+      a {
+        background-color: $white;
+        color: $black-5c;
+        font-size: 16px;
+        &:hover {
+          background-color: #F97F94;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+/* End */
+
+/* Huge collection part design */
+.collection-passage-main {
+  position: relative;
+  .collection-passage-img {
+    display: inline-block;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .collection-passage-detail-wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: auto;
+    /*display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;*/
+    height: 100%;
+    max-width: 835px;
+    margin-right: 130px;
+    padding: 0 15px;
+    align-items: center;
+  }
+  .collection-passage-detail {
+    display: inline-block;
+    width: 100%;
+    h3 {
+      color: $grey-38;
+      font-size: 36px;
+      text-transform: uppercase;
+    }
+    p {
+      color: $grey-38;
+      font-size: 20px;
+    }
+    .offer {
+      display: inline-block;
+      color: $black;
+      font-size: 60px;
+      span {
+        float: left;
+        font-size: 90px;
+        line-height: 84px;
+      }
+      p {
+        display: inline-block;
+        margin: 0;
+        font-size: 40px;
+        text-transform: uppercase;
+        vertical-align: super;
+        &:nth-child(3) {
+          margin-left: -50px;
+          font-size: 28px;
+          vertical-align: sub;
+        }
+      }
+    }
+    .offer-text {
+      display: inline-block;
+      font-size: 34px;
+      text-transform: uppercase;
+      vertical-align: middle;
+    }
+  }
+  .special-action-btn {
+    display: inline-block;
+    margin: 20px 0 0 28px;
+    a {
+      background-color: #40403E;
+      color: $white;
+      font-size: 14px;
+    }
+  }
+}
+/* End */

@@ -1,0 +1,312 @@
+/**
+ * @file
+ * SCSS file to generate CSS.
+ *
+ * About us page SCSS
+ * Enagagement ring page design
+ */
+
+/**
+ * About us page design
+ */
+.abt-banner {
+  .banner-text {
+    top: 0;
+    right: 0;
+    left: auto;
+    max-width: 400px;
+    margin: 150px 185px 0 140px;
+  }
+}
+.about-content {
+  display: block;
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+.advantage-main {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  .adv-top {
+    display: block;
+    max-width: 860px;
+    width: 100%;
+    margin: 100px auto;
+    color: $grey-38;
+    h2 {
+      font-size: 32px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+  .adv-elements-list {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    .adv-element {
+      float: left;
+      width: 46%;
+      margin-right: 6%;
+      margin-bottom: 58px;
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+    .adv-icon {
+      float: left;
+      display: flex;
+      height: 100px;
+      width: 100px;
+      margin-right: 15px;
+      border: 5px double $gray-c3;
+      text-align: center;
+      @include border-radius(50%);
+      align-items: center;
+      i {
+        display: block;
+        margin: 0 auto;
+        color: $black-65;
+        font-size: 32px;
+      }
+    }
+    .adv-detail {
+      float: left;
+      display: inline-block;
+      @include calc('width', '100% - 115px');
+      color: $black-5c;
+      h4 {
+        font-size: 26px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+.about-jr-main {
+  display: inline-block;
+  width: 100%;
+  margin-top: 55px;
+  text-align: center;
+  .detail-icon {
+    display: inline-flex;
+    height: 58px;
+    width: 58px;
+    background-color: #C4E25C;
+    color: $white;
+    align-items: center;
+    @include border-radius(50%);
+    i {
+      display: block;
+      margin: 0 auto;
+      font-size: 40px;
+    }
+  }
+  .about-jr {
+    margin-bottom: 85px;
+    color: $black-5c;
+    h3 {
+      font-size: 24px;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 16px;
+      line-height: 30px;
+    }
+  }
+}
+
+/**
+ * Enagagement ring page design
+ */
+.eng-banner {
+  display: flex;
+  width: 100%;
+  .banner-left-part,
+  .banner-right-part {
+    float: left;
+    display: inline-block;
+    width: 50%;
+  }
+  .banner-left-part {
+    img {
+      width: 100%;
+    }
+  }
+  .banner-right-part {
+    display: inline-flex;
+    background-color: $green-e3;
+    text-align: center;
+    align-items: center;
+    .banner-text {
+      display: inline-block;
+      width: 100%;
+      .banner-rings {
+        img {
+          margin-right: 16px;
+          &:last-child { margin-right: 0; }
+        }
+      }
+      h2 {
+        margin-bottom: 30px;
+        font-size: 50px;
+        text-transform: uppercase;
+      }
+      p {
+        font-size: 20px;
+      }
+      .special-action-btn {
+        margin-top: 45px;
+        a {
+          margin-right: 20px;
+          border: none;
+          &:hover { opacity: .8; }
+          &.select-ring {
+            background-color: $pink-ff;
+          }
+          &.select-diamond {
+            background-color: $white;
+            color: $grey-93;
+          }
+        }
+      }
+    }
+  }
+}
+.eng-ring-main {
+  &.wr-ring-main {
+    padding: 60px 0 0;
+  }
+  .wr-ring-top {
+    margin-bottom: 70px;
+  }
+  .wr-ring-slider {
+    .item {
+      img {
+        height: 170px;
+        width: 170px;
+      }
+    }
+    .item-content {
+      h4 {
+        color: $black-5c;
+        font-size: 22px;
+      }
+      p {
+        font-size: 13px;
+      }
+    }
+  }
+}
+.eng-diamond-wrap {
+  margin-bottom: 60px;
+  .wr-ring-top {
+    max-width: 70%;
+  }
+  .wr-ring-slider {
+    .item {
+      img {
+        height: 170px;
+        width: 170px;
+      }
+    }
+  }
+}
+.designer-diamond-wrap {
+  display: flex;
+  width: 100%;
+  margin: 50px 0;
+  padding-bottom: 15px;
+  background-image: url('../images/bg-eng.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  align-items: center;
+  .designer-diamond-left {
+    float: left;
+    width: 45%;
+    img {
+      margin-top: -50px;
+    }
+  }
+  .designer-diamond-right {
+    float: left;
+    width: 55%;
+    padding: 0 50px;
+    text-align: center;
+    h2 {
+      margin-bottom: 15px;
+      font-size: 35px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+}
+.explore-cust-ring-wrap {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+  .explore-cust-ring-detail {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    max-width: 800px;
+    margin-top: -82px;
+    margin-left: -390px;
+    .explore-cust-ring-title {
+      display: inline-block;
+      margin-bottom: 5px;
+      padding: 8px 20px;
+      background-color: $grey-b7;
+      color:$white;
+      font-size: 25px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    .explore-cust-ring-txt {
+      display: inline-block;
+      margin-bottom: 5px;
+      padding: 4px 20px;
+      background-color: $green-b0;
+      color: $grey-38;
+      font-size: 18px;
+      &.blue-txt { background-color: $blue-b0 ; }
+      &.yellow-txt { background-color: $yellow-f1 ; }
+      &.skin-txt { background-color: $skin-f6;}
+    }
+    .explore-btn {
+      display: inline-block;
+      width: 100%;
+      margin-top: 20px;
+      a {
+        display: inline-block;
+        margin-right: 20px;
+        padding: 12px 20px;
+        background-color: $black-31;
+        color: $white;
+        font-size: 18px;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        @include border-radius(2px);
+        &:hover {opacity: .8;}
+        &.view-review {
+          background-color: $pink-ff;
+        }
+      }
+    }
+  }
+}

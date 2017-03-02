@@ -1,0 +1,112 @@
+/**
+ * @file
+ * SCSS file to generate CSS.
+ *
+ * Header SCSS.
+ */
+
+.header {
+  display: inline-block;
+  width: 100%;
+  padding: 0 70px;
+  border-bottom: 2px solid $grey-38;
+  .top-header {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    .top-header-menu,
+    .top-header-coupon,
+    .top-header-right {
+      float: left;
+      display: inline-block;
+      width: 33.33%;
+    }
+    .top-header-menu {
+      ul {
+        li {
+          float: left;
+          a {
+            display: inline-block;
+            margin: 15px 35px 0 0;
+            color: $grey-38;
+            text-transform: uppercase;
+            &:hover {
+              color: $pink-ff;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+    .top-header-coupon {
+      padding: 12px 20px 20px;
+      background-color: $pink-ff;
+      color: $white;
+      font-size: 18px;
+    }
+    .top-header-right {
+      text-align: right;
+      ul {
+        display: inline-block;
+        li {
+          float: left;
+          a {
+            display: inline-block;
+            margin: 15px 0 0 35px;
+            color: $grey-38;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+  .logo-section {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 35px;
+    .logo-section-grid {
+      float: left;
+      display: inline-block;
+      width: 33.33%;
+      &.search-item {
+        input {
+          display: inline-block;
+          height: 36px;
+          width: 80%;
+          border: 1px solid $grey-38;
+        }
+      }
+      &.contact-number {
+        display: inline-block;
+        text-align: right;
+        .tel-no {
+          display: inline-block;
+        }
+      }
+    }
+  }
+  .main-menu {
+    display: inline-block;
+    width: 100%;
+    ul {
+      li {
+        float: left;
+        margin-right: 93px;
+        margin-bottom: 10px;
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          display: inline-block;
+          /*margin: 15px 35px 0 0;*/
+          color: $grey-38;
+          text-transform: uppercase;
+          &:hover {
+            color: $pink-ff;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

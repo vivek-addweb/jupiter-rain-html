@@ -1,0 +1,280 @@
+/**
+ * @file
+ * SCSS file to generate CSS.
+ *
+ * Choose Ring Seeting page SCSS
+ */
+
+/* Choose Setting step */
+.choose-step-padding { padding: 0 70px; }
+.ring-setting-steps {
+  display: inline-block;
+  width: 100%;
+  margin: 80px 0;
+  .rings-step {
+    position: relative;
+    float: left;
+    margin-right: 50px;
+    padding: 8px 20px;
+    background-color: $black-31;
+    text-transform: uppercase;
+    @include border-radius(4px);
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-right: -22px;
+      content: url('../images/dark-sharp.png');
+    }
+    a{
+      color: $white;
+      font-size: 18px;
+      text-decoration: none;
+      &:hover { opacity: .8; }
+    }
+    &.active {
+      background-color: $pink-ff;
+      &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: -22px;
+        content: url('../images/pink-sharp.png');
+      }
+    }
+  }
+}
+.choose-ring-details-wrap {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid $grey-93;
+  .choose-ring-details {
+    display: inline-block;
+    max-width: 950px;
+    margin-left: 30px;
+    h3 {
+      margin: 0;
+      font-size: 26px;
+    }
+    p {
+      margin-top: 20px;
+      font-size: 16px;
+      color: $grey-93;
+    }
+  }
+}
+.change-grid-view-wrap {
+  /*display: inline-block;*/
+  width: 100%;
+  color: $grey-93;
+  .grid-view-top {
+    display: inline-block;
+    width: 100%;
+    .choose-tabs {
+      float: left;
+      display: inline-block;
+      width: 25%;
+      .list-view,
+      .grid-view {
+        &::before {
+          display: inline-block;
+          margin-top: -2px;
+          margin-left: 10px;
+          font-size: 26px;
+          font-family: 'FontAwesome';
+          cursor: pointer;
+          content: '\f03a';
+        }
+      }
+      .grid-view {
+        &::before {
+          content: '\f00a';
+        }
+      }
+    }
+    .choose-filters {
+      display: inline-block;
+      width: 75%;
+      margin-bottom: 50px;
+      text-align: right;
+      .filter {
+        display: inline-block;
+        margin-left: 50px;
+        label {
+          margin-top: 10px;
+          margin-right: 10px;
+        }
+        select {
+          height: 40px;
+          padding: 0 14px;
+          &:focus { outline: none; }
+        }
+      }
+    }
+  }
+  .listing-view-grid {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+    .grid-view-wrap {
+      float: left;
+      display: inline-block;
+      margin-right: 20px;
+      margin-bottom: 60px;
+      @include calc('width', '25% - 15px');
+      @include box-shadow(0px 0px 4px 3px rgba(195, 195, 195 ,.6));
+      &:nth-child(4n) { margin-right: 0; }
+      .grid-view-img {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 20px;
+        border-bottom: 2px solid $gray-c3;
+      }
+      .grid-view-title {
+        a {
+          color: $grey-93;
+        }
+      }
+      .grid-view-price {
+        h2{
+          margin-bottom: 20px;
+          color: $pink-ff;
+        }
+      }
+      .grid-view-details {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 20px;
+        .see-icon,
+        .favourite-icon {
+          &:hover {
+            color: $pink-ff;
+          }
+          &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-top: 6px;
+            margin-left: 24px;
+            font-size: 22px;
+            font-family: 'FontAwesome';
+            cursor: pointer;
+            content: '\f06e';
+          }
+        }
+        .favourite-icon {
+          &::before {
+            right: 0;
+            left: auto;
+            margin-right: 24px;
+            margin-left: 0;
+            content: '\f004';
+          }
+        }
+        .see-detail-btn {
+          display: inline-block;
+          padding: 6px 20px;
+          background-color: $black-31;
+          color: $white;
+          font-size: 15px;
+          text-decoration: none;
+          @include border-radius(4px);
+          &:hover {
+            color: $pink-ff;
+          }
+        }
+      }
+    }
+  }
+  .listing-view-list {
+    text-align: left;
+    .grid-view-wrap {
+      display: flex;
+      width: 100%;
+      margin-bottom: 20px;
+      align-items: center;
+      /*@include box-shadow(0px 0px 4px 3px rgba(195, 195, 195 ,.6));*/
+      .grid-view-img {
+        float: left;
+        display: inline-block;
+        width: 190px;
+        margin-right: 40px;
+        border-bottom: none;
+        border-right: 2px solid $gray-c3;
+      }
+      .grid-view-title,
+      .grid-view-price,
+      .grid-view-details {
+        float: left;
+        font-size: 18px;
+      }
+      .grid-view-details {
+        display: inline-block;
+        .see-icon,
+        .favourite-icon {
+          &:before {
+            display: inline-block;
+            margin-top: 6px;
+            margin-right: 24px;
+            font-size: 22px;
+            font-family: 'FontAwesome';
+            cursor: pointer;
+            content: '\f06e';
+          }
+        }
+        .favourite-icon {
+          &::before {
+            margin-0: 24px;
+            margin-left: 24px;
+            content: '\f004';
+          }
+        }
+        .see-detail-btn {
+          display: inline-block;
+          padding: 6px 20px;
+          background-color: $black-31;
+          color: $white;
+          font-size: 15px;
+          text-decoration: none;
+          @include border-radius(4px);
+          &:hover {
+            color: $pink-ff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav-tabs {
+  border-top: 1px solid $gray-c3;
+  border-bottom: 1px solid $gray-c3;
+  margin-bottom: 30px;
+  > li {
+    margin-bottom: 0;
+    &.active {
+      > a {
+        border: none;
+        background-color: $pink-ff;
+        color: $white;
+        @include border-radius(0);
+        &:hover,
+        &:focus { 
+          border: none;
+          background-color: $pink-ff;
+          color: $white;
+        }
+      } 
+    }
+    a {
+      border: none;
+      color: $black-31;
+      font-size: 18px;
+    }
+  }
+}
+      
