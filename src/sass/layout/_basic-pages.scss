@@ -271,10 +271,10 @@
       margin-bottom: 5px;
       padding: 8px 20px;
       background-color: $grey-b7;
-      color:$white;
+      color: $white;
       font-size: 25px;
-      text-transform: uppercase;
       letter-spacing: 2px;
+      text-transform: uppercase;
     }
     .explore-cust-ring-txt {
       display: inline-block;
@@ -283,9 +283,9 @@
       background-color: $green-b0;
       color: $grey-38;
       font-size: 18px;
-      &.blue-txt { background-color: $blue-b0 ; }
-      &.yellow-txt { background-color: $yellow-f1 ; }
-      &.skin-txt { background-color: $skin-f6;}
+      &.blue-txt { background-color: $blue-b0; }
+      &.yellow-txt { background-color: $yellow-f1; }
+      &.skin-txt { background-color: $skin-f6; }
     }
     .explore-btn {
       display: inline-block;
@@ -298,11 +298,11 @@
         background-color: $black-31;
         color: $white;
         font-size: 18px;
+        letter-spacing: 2px;
         text-decoration: none;
         text-transform: uppercase;
-        letter-spacing: 2px;
         @include border-radius(2px);
-        &:hover {opacity: .8;}
+        &:hover { opacity: .8; }
         &.view-review {
           background-color: $pink-ff;
         }

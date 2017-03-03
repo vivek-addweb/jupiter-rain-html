@@ -15,7 +15,7 @@
     width: 50%;
     padding: 15px;
     border: 1px solid $gray-c3;
-    .product-main-image-wrap{
+    .product-main-image-wrap {
       display: inline-block;
       width: 100%;
       padding: 15px;
@@ -30,8 +30,8 @@
           display: table-cell;
           height: 100%;
           width: 100%;
-          vertical-align: middle;
           text-align: center;
+          vertical-align: middle;
         }
       }
       .add-wishlist-wrap {
@@ -39,19 +39,167 @@
         width: 100%;
         text-align: right;
         .add-wishlist-icon {
-          &:before {
+          &::before {
             display: inline-block;
             margin-right: 20px;
             color: $pink-ff;
             font-size: 50px;
             font-family: 'FontAwesome';
-            content: "\f004";
+            content: '\f004';
           }
           &:hover {
-            &:before {
+            &::before {
               color: $grey-93;
             }
           }
+        }
+      }
+    }
+  }
+  .product-details-right {
+    float: left;
+    display: inline-block;
+    width: 50%;
+    padding-left: 48px;
+    color: $black-5c;
+    h2 {
+      margin: 0 0 10px;
+      font-size: 34px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .gold-details {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 10px;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+    .rating-review-wrap {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 10px;
+      color: $black-5c;
+      .rating-number {
+        display: inline-block;
+        margin-right: 3px;
+        font-size: 18px;
+        font-weight: bold;
+        vertical-align: top;
+      }
+      .rating-icon-wrap {
+        display: inline-block;
+        margin-right: 5px;
+        vertical-align: middle;
+      }
+      .rating-icon {
+        display: inline-block;
+        width: 15px;
+        &::before {
+          display: inline-block;
+          height: 10px;
+          width: 10px;
+          color: #EDCF53;
+          font-size: 16px;
+          font-family: 'FontAwesome';
+          content: '\f005';
+        }
+      }
+      .rating-review {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+    .price-wrap {
+      display: inline-block;
+      width: 100%;
+      margin: 10px 0 25px;
+      color: $black-5c;
+      font-size: 18px;
+      span { vertical-align: bottom; }
+      .price {
+        font-size: 38px;
+        line-height: 38px;
+      }
+    }
+    .metal-details {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 12px;
+    }
+    .ring-size-details {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 45px;
+      .select-tag-small { vertical-align: middle; }
+      .find-size {
+        display: inline-block;
+        margin: 0 18px;
+        color: $black-5c;
+        font-size: 14px;
+        vertical-align: middle;
+      }
+    }
+    .add-pincode {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 20px;
+      .input-code {
+        display: inline-block;
+        width: 100%;
+        padding-left: 10px;
+        &::before {
+          display: inline-block;
+          height: 20px;
+          width: 20px;
+          margin-right: 15px;
+          font-size: 32px;
+          font-family: 'FontAwesome';
+          content: '\f041';
+        }
+        input {
+          height: 35px;
+          width: 90px;
+        }
+        .change {
+          display: inline-block;
+          margin: 0 15px;
+          color: $pink-ff;
+          font-weight: bold;
+          text-decoration: none;
+          vertical-align: super;
+        }
+      }
+    }
+    .delivery-details {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 65px;
+      padding-left: 10px;
+      &::before {
+        display: inline-block;
+        height: 20px;
+        margin-right: 15px;
+        color: $black-5c;
+        font-size: 20px;
+        font-family: 'FontAwesome';
+        content: '\f0d1';
+      }
+    }
+    .product-btn {
+      display: inline-block;
+      width: 100%;
+      padding-left: 10px;
+      a {
+        min-width: 228px;
+        margin-right: 15px;
+        padding: 8px 12px;
+        background-color: $pink-ff;
+        font-size: 16px;
+        letter-spacing: 0;
+        text-align: center;
+        &:hover {
+          background-color: $black-31;
         }
       }
     }

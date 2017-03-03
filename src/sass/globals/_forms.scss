@@ -88,6 +88,46 @@ textarea {
 }
 /* End */
 
+/* Custom select box design for product detail page */
+.select-tag-small {
+  position: relative;
+  display: inline-block;
+  height: 35px;
+  width: 212px;
+  border: 1px solid #E6E6E6;
+  background: $white;
+  @include border-radius(0);
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: auto;
+    display: inline-block;
+    height: 0;
+    width: 0;
+    margin: 6px 22px 0 0;
+    color: #676767;
+    font-size: 20px;
+    font-family: 'FontAwesome';
+    content: '\f107';
+  }
+  select {
+    position: relative;
+    z-index: 1;
+    height: 35px;
+    width: 100%;
+    padding: 5px 35px 5px 10px;
+    border: none;
+    background: transparent;
+    color: $black;
+    line-height: 18px;
+    text-align: center;
+    @include appearance (none);
+    @include box-shadow (node);
+  }
+}
+/* End */
+
 /* button design */
 .special-action-btn {
   a {
