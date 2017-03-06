@@ -124,6 +124,7 @@ textarea {
     text-align: center;
     @include appearance (none);
     @include box-shadow (node);
+    &:focus { outline: none; }
   }
 }
 /* End */
