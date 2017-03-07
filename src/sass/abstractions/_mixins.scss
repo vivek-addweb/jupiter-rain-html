@@ -23,6 +23,12 @@
       -ms-box-shadow: $value;
           box-shadow: $value;
 }
+@mixin filter($value) {
+  -webkit-filter: $value;
+     -moz-filter: $value;
+      -ms-filter: $value;
+          filter: $value;
+}
 @mixin appearance($value) {
   -webkit-appearance: $value;
      -moz-appearance: $value;
