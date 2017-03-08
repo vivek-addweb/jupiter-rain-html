@@ -30,8 +30,9 @@ ul {
         &:hover { background-color: transparent; }
         &::before {
           display: inline-block;
-          height: 15px;
-          width: 15px;
+          height: 30px;
+          width: 20px;
+          margin-left: 30px;
           color: $black-65;
           font-size: 30px;
           font-family: 'FontAwesome';
@@ -40,7 +41,11 @@ ul {
       }
       .owl-next {
         float: right;
-        &::before { content: '\f105'; }
+        &::before {
+          margin-right: 30px;
+          margin-left: 0;
+          content: '\f105';
+        }
       }
     }
   }
