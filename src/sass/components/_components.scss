@@ -3,8 +3,46 @@
  * SCSS file to generate CSS.
  *
  * Components design.
+ * Owl-carousel design.
  */
 ul {
   padding-left: 0;
   list-style-type: none;
 }
+
+/* Owl-carousel design */
+.owl-theme {
+  .owl-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    margin-top: -27px;
+    .owl-nav {
+      [class*=owl-],
+      .owl-prev,
+      .owl-next {
+        float: left;
+        display: inline-block;
+        background-color: transparent;
+        font-size: 0;
+        &:hover { background-color: transparent; }
+        &::before {
+          display: inline-block;
+          height: 15px;
+          width: 15px;
+          color: $black-65;
+          font-size: 30px;
+          font-family: 'FontAwesome';
+          content: '\f104';
+        }
+      }
+      .owl-next {
+        float: right;
+        &::before { content: '\f105'; }
+      }
+    }
+  }
+}
+/* End */

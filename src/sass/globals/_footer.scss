@@ -108,7 +108,7 @@
         width: auto;
         &:hover {
           img {
-            @include filter(grayscale(0));  
+            @include filter(grayscale(0));
           }
         }
         img {
