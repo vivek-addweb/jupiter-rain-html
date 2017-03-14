@@ -389,9 +389,21 @@ $primary-family: "Times New Roman", Georgia, Serif;
       font-family: $primary-family; 
       color: #000;
     }
+    .policies-subheading {
+      float: left;
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 5px 0;
+      font-size: 16px;
+      line-height: 15px;
+      font-family: $primary-family;
+    }
     .detail-subheading {
       float: left;
       width: 100%;
+      padding: 5px 0;
+      font-size: 16px;
+      font-family: $primary-family; 
       padding: 5px 0;
       font-size: 16px;
       font-family: $primary-family; 
@@ -403,10 +415,11 @@ $primary-family: "Times New Roman", Georgia, Serif;
 .service-section {
   float: left;
   width: 100%;
-  margin: 20px 0;
+  margin: 30px 0;
   .service-heading {
     float: left;
     width: 100%;
+    padding: 10px 0;
     font-size: 26px;
     line-height: 20px;
     font-family: $primary-family;
@@ -414,11 +427,63 @@ $primary-family: "Times New Roman", Georgia, Serif;
   .service-details {
     float: left;
     width: 100%;
-    font-size: 16px;
-    line-height: 15px;
+    padding: 5px 0;
+    font-size: 20px;
+    line-height: 28px;
     font-family: $primary-family;
   }
 }
 /* End */
 
+.section-background {
+  position: relative;
+  float: left;
+  width: 100%;
+  > img {
+    max-height: 525px;
+    width: 100%;
+  }
+  .middle-section {
+    position: absolute;
+    float: left;
+    top: 100px;
+    width: 100%;
+    max-width: 620px;
+    margin: 0 0px 0 100px;
+    padding: 40px 0;
+    text-align: center;
+    .middle-heading {
+      float: left;
+      width: 100%;
+      padding: 20px 0;
+      font-size: 36px;
+      line-height: 20px;
+      font-family: $primary-family;
+    }
+    .middle-subheading {
+      width: 100%;
+      padding: 5px 0;
+      font-size: 20px;
+      line-height: 28px;
+      font-family: $primary-family;
+    }
+  }
+}
 
+.ring_section {
+  float: left;
+  width: 100%;
+  h1 {
+    float: left;
+    width: 100%;
+    padding: 5px 0;
+    line-height: 28px;
+    font-family: $primary-family;
+  }
+  p {
+    float: left;
+    width: 100%;
+    padding: 5px 0;
+
+  }
+}
