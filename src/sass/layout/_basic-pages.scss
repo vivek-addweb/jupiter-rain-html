@@ -312,26 +312,14 @@
 }
 
 /* shipping-packing */
-.middle-image {
+/*.middle-image {
   float: left;
   width: 100%;
   > img { width: 100%; }
 }
 
-.button-group{ 
+.button-group { 
   text-align: center;
-<<<<<<< HEAD
-  float: left;
-  width: 100%;
-  margin: 30px 0;
-  .shipping-btn {
-    float: left;
-    width: auto;
-    button {
-      max-height: 40px;
-      width: 100%;
-      padding: 10px 15px;
-=======
   width: 100%;
   margin-top: 75px;
   margin-bottom: 45px;
@@ -359,7 +347,6 @@
       width: 100%;
       padding: 10px 25px;
       font-size: 16px;
->>>>>>> 485103a22369f45740fa7fc254ab082da9e5f508
       background-color: $primary-backgroud;
       color: $primary-color;
     }
@@ -392,14 +379,6 @@
   }
 }
 
-<<<<<<< HEAD
-.free-shipping-box {
-  float: left;
-  width: 100%;
-  .shipping-img {
-    float: left;
-    width: 35%;
-=======
 .main-shipping-class {
   float: left;
   width: 100%;
@@ -413,31 +392,20 @@
   .shipping-img {
     float: left;
     width: 30%;
->>>>>>> 485103a22369f45740fa7fc254ab082da9e5f508
     text-align: center;
     > img { width: 100%; }
   }
   .shipping-details-part {
     float: left;
-<<<<<<< HEAD
-    width: 65%;
-=======
     width: 70%;
->>>>>>> 485103a22369f45740fa7fc254ab082da9e5f508
     padding: 0 15px;
     .detail-heading {
       float: left;
       width: 100%;
-<<<<<<< HEAD
-      padding: 10px 0;
-=======
->>>>>>> 485103a22369f45740fa7fc254ab082da9e5f508
       font-size: 26px;
       font-family: $primary-family; 
       color: #000;
     }
-<<<<<<< HEAD
-=======
     .policies-subheading {
       float: left;
       width: 100%;
@@ -447,14 +415,12 @@
       line-height: 25px;
       font-family: $primary-family;
     }
->>>>>>> 485103a22369f45740fa7fc254ab082da9e5f508
     .detail-subheading {
       float: left;
       width: 100%;
       padding: 5px 0;
       font-size: 16px;
       font-family: $primary-family; 
-<<<<<<< HEAD
     }
   }
 }
@@ -478,18 +444,10 @@
     line-height: 15px;
     font-family: $primary-family;
   }
-}
+}*/
 /* End */
 
-=======
-      padding: 5px 0;
-      font-size: 16px;
-      font-family: $primary-family; 
-    }
-  }
-}
-
-.main-class {
+/*.main-class {
   float: left;
   width: 100%;
   margin-bottom: 30px;
@@ -516,11 +474,11 @@
       font-family: $primary-family;
     }
   }
-}
+}*/
   
 /* End */
 
-.section-background {
+/*.section-background {
   position: relative;
   float: left;
   width: 100%;
@@ -681,6 +639,5 @@
       line-height: 30px;
     }
   }
-}
->>>>>>> 485103a22369f45740fa7fc254ab082da9e5f508
+}*/
 

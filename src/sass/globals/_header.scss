@@ -195,7 +195,7 @@
           left: 0;
           z-index: 1;
           display: inline-block;
-          width: 600px;
+          width: 700px;
           margin-top: 31px;
           padding: 30px;
           background-color: $white;
@@ -209,14 +209,15 @@
               top: 0;
               left: 0;
               display: inline-block;
-              background-color: $white;
               margin-top: -10px;
               margin-left: 10px;
               padding: 0 8px;
+              background-color: $white;
             }
             .fieldset-menu {
               display: inline-block;
               width: 100%;
+              margin-bottom: 30px;
               padding: 20px;
               border: 2px solid $black-65;
               ul {
@@ -225,6 +226,56 @@
                   display: inline-block;
                   width: 20%;
                   margin: 5px 0;
+                }
+              }
+            }
+          }
+          .product-menu {
+            display: inline-block;
+            width: 100%;
+            .product-menu-left {
+              float: left;
+              width: 60%;
+              padding-right: 60px;
+              .product-images {
+                display: inline-block;
+                width: 100%;
+                margin-bottom: 20px;
+                border-bottom: 1px solid $black-65;
+                img {
+                  float: left;
+                  margin-right: 15px;
+                  margin-bottom: 20px;
+                }
+              }
+              .product-list {
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+                a {
+                  float: left;
+                  width: 50%;
+                }
+              }
+            }
+            .product-menu-right {
+              float: left;
+              width: 40%;
+              .product-of-month {
+                a {
+                  border: 1px solid $black-65;
+                  .product-of-month-name {
+                    display: inline-block;
+                    width: 100%;
+                    padding: 10px;
+                    background-color: $grey-93;
+                    color: $white;
+                    font-size: 16px;
+                    text-align: center;
+                    &:hover {
+                      color: $black-65;
+                    }
+                  }
                 }
               }
             }
