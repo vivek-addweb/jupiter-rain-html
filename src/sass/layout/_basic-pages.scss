@@ -9,12 +9,6 @@
 /**
  * About us page design
  */
-
- /* Variable */
-$primary-backgroud: #0000FF;
-$primary-color: #FFF;
-$primary-family: "Times New Roman", Georgia, Serif;
-
 .abt-banner {
   .banner-text {
     top: 0;
@@ -326,6 +320,7 @@ $primary-family: "Times New Roman", Georgia, Serif;
 
 .button-group{ 
   text-align: center;
+<<<<<<< HEAD
   float: left;
   width: 100%;
   margin: 30px 0;
@@ -336,6 +331,35 @@ $primary-family: "Times New Roman", Georgia, Serif;
       max-height: 40px;
       width: 100%;
       padding: 10px 15px;
+=======
+  width: 100%;
+  margin-top: 75px;
+  margin-bottom: 45px;
+  display: inline-block;
+  .shipping-btn {
+    width: auto;
+    display: inline-block;
+    margin: 0 5px;
+    button {
+      max-height: 45px;
+      width: 100%;
+      padding: 12px 25px;
+      font-size: 16px;
+      background-color: $primary-backgroud1;
+      color: $primary-color;
+      border: none;
+    }
+  }
+  .packing-btn {
+    width: auto;
+    display: inline-block;
+    margin: 0 5px;
+    button {
+      max-height: 45px;
+      width: 100%;
+      padding: 10px 25px;
+      font-size: 16px;
+>>>>>>> 485103a22369f45740fa7fc254ab082da9e5f508
       background-color: $primary-backgroud;
       color: $primary-color;
     }
@@ -368,33 +392,69 @@ $primary-family: "Times New Roman", Georgia, Serif;
   }
 }
 
+<<<<<<< HEAD
 .free-shipping-box {
   float: left;
   width: 100%;
   .shipping-img {
     float: left;
     width: 35%;
+=======
+.main-shipping-class {
+  float: left;
+  width: 100%;
+  margin:30px 0;
+}
+
+.free-shipping-box {
+  float: left;
+  width: 100%;
+  margin: 30px 0;
+  .shipping-img {
+    float: left;
+    width: 30%;
+>>>>>>> 485103a22369f45740fa7fc254ab082da9e5f508
     text-align: center;
     > img { width: 100%; }
   }
   .shipping-details-part {
     float: left;
+<<<<<<< HEAD
     width: 65%;
+=======
+    width: 70%;
+>>>>>>> 485103a22369f45740fa7fc254ab082da9e5f508
     padding: 0 15px;
     .detail-heading {
       float: left;
       width: 100%;
+<<<<<<< HEAD
       padding: 10px 0;
+=======
+>>>>>>> 485103a22369f45740fa7fc254ab082da9e5f508
       font-size: 26px;
       font-family: $primary-family; 
       color: #000;
     }
+<<<<<<< HEAD
+=======
+    .policies-subheading {
+      float: left;
+      width: 100%;
+      margin: 10px 0;
+      padding: 5px 0;
+      font-size: 16px;
+      line-height: 25px;
+      font-family: $primary-family;
+    }
+>>>>>>> 485103a22369f45740fa7fc254ab082da9e5f508
     .detail-subheading {
       float: left;
       width: 100%;
       padding: 5px 0;
       font-size: 16px;
       font-family: $primary-family; 
+<<<<<<< HEAD
     }
   }
 }
@@ -421,4 +481,206 @@ $primary-family: "Times New Roman", Georgia, Serif;
 }
 /* End */
 
+=======
+      padding: 5px 0;
+      font-size: 16px;
+      font-family: $primary-family; 
+    }
+  }
+}
+
+.main-class {
+  float: left;
+  width: 100%;
+  margin-bottom: 30px;
+.service-section {
+    float: left;
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px 20px;
+    .service-heading {
+      float: left;
+      width: 100%;
+      padding: 10px 0;
+      font-size: 26px;
+      line-height: 20px;
+      font-family: $primary-family;
+    }
+    .service-details {
+      float: left;
+      width: 100%;
+      max-width: 1200px;
+      padding: 5px 0;
+      font-size: 20px;
+      line-height: 28px;
+      font-family: $primary-family;
+    }
+  }
+}
+  
+/* End */
+
+.section-background {
+  position: relative;
+  float: left;
+  width: 100%;
+  background-image: url(../images/shiping-banner.jpg);
+    min-height: 410px;
+    background-size: cover;
+    background-position: 0 -75px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    &:after {
+      position: absolute;
+      top: 0;
+      right: -105px;
+      height: 0;
+      width: 0;
+      border-left: 370px solid transparent;
+      border-right: 280px solid transparent;
+      border-top: 310px solid #f29aa8;
+      content: "";
+      opacity: .7;
+      }
+    .middle-section {
+      position: absolute;
+      float: left;
+      top: 100px;
+      width: 100%;
+      max-width: 630px;
+      margin: 0 0px 0 100px;
+      padding: 40px 0;
+      text-align: center;
+      .middle-heading {
+      float: left;
+      width: 100%;
+      padding: 15px 0;
+      font-size: 50px;
+      font-family: $primary-family;
+    }
+    .middle-subheading {
+      width: 100%;
+      padding: 5px 0;
+      font-size: 20px;
+      line-height: 28px;
+      font-family: $primary-family;
+    }
+  }
+}
+
+.ring-part {
+  float: left;
+  width: 100%;
+  margin: 30px 0;
+  .ring_section {
+    float: left;
+    width: 100%;
+    text-align: center;
+    h1 {
+      float: left;
+      width: 100%;
+      padding: 5px 0;
+      font-size: 70px;
+      font-family: $primary-family1;
+      font-weight: bold;
+    }
+    p {
+      float: left;
+      width: 100%;
+      padding: 5px 30px;
+      font-size: 24px;
+      line-height: 34px;
+    }
+  }
+  .ring-image {
+    float: left;
+    width: 100%;
+    text-align: center;
+    > img {
+      width: 100%;
+      max-width: 450px;
+    }
+  }
+}
+
+.gift-section {
+  position: relative;
+  float: left;
+  width: 100%;
+  > image {
+    max-height: 570px;
+    width: 100%;
+  }
+  .gift-banner-detail {
+    position: absolute;
+    float: right;
+    bottom: 150px;
+    text-align: center;
+    h1 {
+      float: left;
+      width: 100%;
+      padding: 15px 0;
+      color: $primary-color;
+      line-height: 28px;
+      font-family: $primary-family;
+    }
+    p {
+      float: left;
+      width: 100%;
+      padding: 5px 0;
+      color: $primary-color;
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+}
+
+.surprise-section {
+  float: left;
+  width:100%;
+  margin: 30px 0;
+  .surprise-img {
+    float: left;
+    width: 100%;
+    padding: 40px 0;
+    text-align: center;
+    > img { width: 100%; }
+  }
+  .suprise-section {
+    float: left;
+    width: 100%;
+    .surprise-part {
+      float: left;
+      width: 100%;
+      .surprise-heading {
+        float: left;
+        width: 100%;
+        padding: 10px 0;
+        color: $primary-color3;
+        font-size: 64px;
+        font-family: $primary-family;
+        font-weight: bold;
+      }
+      .sub-title {
+        float: left;
+        width: 100%;
+        color: $primary-color3;
+        font-size: 50px;
+        font-family: $primary-family;
+        .box {
+          color: $primary-color1;
+        }
+      }
+    }
+    p {
+      float: left;
+      width: 100%;
+      padding: 5px 0;
+      color: $primary-color3;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+>>>>>>> 485103a22369f45740fa7fc254ab082da9e5f508
 
