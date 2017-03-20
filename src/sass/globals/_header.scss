@@ -172,11 +172,13 @@
     ul {
       display: inline-block;
       width: 100%;
-      text-align: justify;
-      text-align-last: justify;
+      /*text-align: justify;
+      text-align-last: justify;*/
       li {
+        position: relative;
         display: inline-block;
         width: auto;
+        margin: 0 20px;
         a {
           display: inline-block;
           color: $black-65;
@@ -186,6 +188,15 @@
             color: $pink-ff;
             text-decoration: none;
           }
+        }
+        .megamenu {/*
+          position: absolute;
+          top: 0;
+          left: 0;*/
+          display: inline-block;
+          width: 600px;
+          padding: 30px;
+          @include box-shadow(1px 1px 3px 1px rgba(0, 0, 0, .2));
         }
       }
     }
