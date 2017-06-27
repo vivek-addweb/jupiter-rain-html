@@ -2,6 +2,7 @@
 sites/*/settings*.php
 gulp
 .zip
+.DS_Store
 
 # Ignore paths that contain user-generated content.
 sites/*/files
